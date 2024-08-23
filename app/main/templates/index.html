@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMate</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Barra de navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">TaskMate</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <div class="row">
+            <!-- Coluna Esquerda para Anúncios -->
+            <div class="col-md-2 d-none d-md-block">
+                <div class="ad-space">
+                    <p>Anúncio</p>
+                </div>
+            </div>
+
+            <!-- Coluna Central para Conteúdo Principal -->
+            <div class="col-md-8">
+                <div class="content">
+                    <h2>Organize suas tarefas de forma inteligente e eficiente.</h2>
+
+                    <p>
+                        Bem-vindo ao TaskMate, a aplicação web que ajuda você a gerenciar suas atividades diárias de maneira organizada e produtiva. Com o TaskMate, você pode não apenas criar e editar tarefas, mas também organizá-las por tags, definir prazos, e acompanhar seu progresso com tarefas do tipo "contagem".
+                    </p>
+
+                    <h3>Principais Funcionalidades:</h3>
+
+                    <ul>
+                        <li>
+                            <h5>Adicionar Tarefas:</h5>
+                            <p>Insira novas tarefas facilmente e personalize-as com tags para melhor organização.</p>
+                        </li>
+                        <li>
+                            <h5>Tags para Organização:</h5>
+                            <p>Categorize suas tarefas usando tags, facilitando a filtragem e o foco nas tarefas mais importantes.</p>
+                        </li>
+                        <li>
+                            <h5>Definir Prazo:</h5>
+                            <p>Atribua uma data de conclusão para cada tarefa, garantindo que você mantenha suas atividades dentro do cronograma.</p>
+                        </li>
+                        <li>
+                            <h5>Tarefas de Contagem:</h5>
+                            <p>Crie tarefas com um objetivo numérico e acompanhe seu progresso. Essas tarefas podem ser incrementadas ou decrementadas até que o objetivo seja atingido.</p>
+                        </li>
+                        <li>
+                            <h5>Editar e Excluir Tarefas:</h5>
+                            <p>Modifique ou remova tarefas conforme suas prioridades mudam.</p>
+                        </li>
+                    </ul>
+                    <p>Mantenha-se produtivo, organizado e alcance seus objetivos com o TaskMate!</p>
+                </div>
+            </div>
+
+            <!-- Coluna Direita para Anúncios -->
+            <div class="col-md-2 d-none d-md-block">
+                <div class="ad-space">
+                    <p>Anúncio</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>
