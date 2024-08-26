@@ -1,1 +1,1 @@
-from .base_repository import BaseRepositoryInterface
+from .base import BaseRepositoryInterface
