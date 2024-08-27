@@ -4,13 +4,13 @@ from abc import abstractmethod
 class UserModelInterface(BaseModelInterface):
     @property
     @abstractmethod
-    def user_name(self) -> str:
+    def username(self) -> str:
         """Obtém o nome de usuário."""
         pass
 
-    @user_name.setter
+    @username.setter
     @abstractmethod
-    def user_name(self, value: str):
+    def username(self, value: str):
         """Define o nome de usuário."""
         pass
 
