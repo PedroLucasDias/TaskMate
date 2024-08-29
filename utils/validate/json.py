@@ -3,6 +3,8 @@ from typing import Any
 def validate(obj: Any) -> Any:
     """
     Valida se o objeto é compatível com os tipos JSON aceitos.
+
+    Return: retorna uma cópia profunda do obj caso ele passe na validação.
     """
 
     if isinstance(obj, dict):
