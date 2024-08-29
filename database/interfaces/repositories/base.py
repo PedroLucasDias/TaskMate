@@ -1,6 +1,8 @@
-from ..models import BaseModelInterface
-from typing import List, Optional, Union
 from abc import ABC, abstractmethod
+from typing import List, Optional, Union
+
+from ..models import BaseModelInterface
+
 
 class BaseRepositoryInterface(ABC):
     @abstractmethod
@@ -13,7 +15,7 @@ class BaseRepositoryInterface(ABC):
         pass
 
     @abstractmethod
-    def read(self, query: dict = None) -> List[BaseModelInterface] :
+    def read(self, query: dict = None) -> List[BaseModelInterface]:
         """
         Retorna uma lista de Models com base na query.
         """
