@@ -6,11 +6,11 @@ from ..models import BaseModelInterface
 
 class BaseRepositoryInterface(ABC):
     @abstractmethod
-    def create(self, *models: BaseModelInterface) -> Union[List[str], Optional[str]]:
+    def create(self, *models: BaseModelInterface) -> List[str]:
         """
-        Insere os dados de um ou mais Models no repositório e retorna os IDs.
+        Insere os dados de um ou mais Models no repositório.
 
-        Retorna None caso não consiga inserir os dados.
+        Retorna os IDs.
         """
         pass
 
